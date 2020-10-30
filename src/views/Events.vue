@@ -7,7 +7,7 @@
 <script>
 import CS from "@/components/CS";
 export default {
-  name: "News",
+  name: "Events",
   components: { CS },
 };
 </script>

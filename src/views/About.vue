@@ -7,7 +7,7 @@
 <script>
 import CS from "@/components/CS";
 export default {
-  name: "ESports",
+  name: "About",
   components: { CS },
 };
 </script>

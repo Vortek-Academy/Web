@@ -20,17 +20,13 @@
         >
       </router-link>
       <v-spacer />
-      <v-btn text depressed to="/overview">Overview</v-btn>
+      <v-btn text depressed to="/about">About</v-btn>
+      <v-btn text depressed to="/blog">Blog</v-btn>
+      <v-btn text depressed to="/shop">Shop</v-btn>
       <v-btn text depressed to="/contact">Contact</v-btn>
-      <v-btn text depressed to="/news">News</v-btn>
-      <v-btn text depressed to="/e-sports">ESports</v-btn>
+      <v-btn text depressed to="/legal">Legal</v-btn>
       <v-spacer />
-      <v-btn
-        depressed
-        href="https://www.payumoney.com/paybypayumoney/#/118827B99B2095C820B430D3C7DB4EA1"
-        class="special"
-        >Donate</v-btn
-      >
+      <v-btn depressed to="/events" class="special">Events</v-btn>
     </v-app-bar>
   </v-layout>
 </template>

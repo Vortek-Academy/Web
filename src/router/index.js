@@ -11,9 +11,24 @@ const routes = [
     component: Home,
   },
   {
-    path: "/overview",
-    name: "Overview",
-    component: () => import("../views/Overview"),
+    path: "/about",
+    name: "About",
+    component: () => import("../views/About"),
+  },
+  {
+    path: "/blog",
+    name: "Blog",
+    component: () => import("../views/Blog"),
+  },
+  {
+    path: "/events",
+    name: "Events",
+    component: () => import("../views/Events"),
+  },
+  {
+    path: "/shop",
+    name: "Shop",
+    component: () => import("../views/Shop"),
   },
   {
     path: "/contact",
@@ -21,14 +36,9 @@ const routes = [
     component: () => import("../views/Contact"),
   },
   {
-    path: "/news",
-    name: "News",
-    component: () => import("../views/News"),
-  },
-  {
-    path: "/e-sports",
-    name: "ESports",
-    component: () => import("../views/ESports"),
+    path: "/legal",
+    name: "Legal",
+    component: () => import("../views/Legal"),
   },
 ];
 

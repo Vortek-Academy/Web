@@ -92,8 +92,8 @@ export default {
   left: 0;
   width: 100%;
   height: 100%;
-  background: url(https://imgur.com/dsRurek.png);
-  filter: blur(5px);
+  z-index: 0;
+  background: url(https://i.imgur.com/SJ3DaWC.jpg);
   background-size: cover;
   position: relative;
   overflow: hidden;
