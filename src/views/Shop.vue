@@ -44,6 +44,7 @@
         <v-divider dark></v-divider>
         <v-card-text
           v-for="perk in tier.perks"
+          :key="perk"
           style="color: whitesmoke; font-family: Josefin, sans-serif"
           >{{ perk.toUpperCase() }}</v-card-text
         >

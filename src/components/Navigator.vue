@@ -10,23 +10,24 @@
       <router-link to="/" class="text-decoration-none white--text">
         <v-toolbar-title
           style="
-            font-size: 1.8rem;
+            font-size: 1.6rem;
             font-family: 'Bebas Neue', sans-serif;
             letter-spacing: 2px;
           "
-          ><span style="color: #e67e22; font-size: 2.2rem">V</span>orteK
-          <span style="color: #e67e22; font-size: 2.2rem">A</span
+          ><span style="color: #e67e22; font-size: 2.6rem">V</span>orteK
+          <span style="color: #e67e22; font-size: 2.6rem">A</span
           >cademy</v-toolbar-title
         >
       </router-link>
       <v-spacer />
       <v-btn text depressed to="/about">About</v-btn>
-      <v-btn text depressed to="/blog">Blog</v-btn>
       <v-btn text depressed to="/shop">Shop</v-btn>
       <v-btn text depressed to="/contact">Contact</v-btn>
       <v-btn text depressed to="/legal">Legal</v-btn>
       <v-spacer />
-      <v-btn depressed to="/events" class="special">Events</v-btn>
+      <v-btn depressed to="https://paypal.me/vortekacademy" class="special"
+        >Donate</v-btn
+      >
     </v-app-bar>
   </v-layout>
 </template>

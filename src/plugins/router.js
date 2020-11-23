@@ -16,16 +16,6 @@ const routes = [
     component: () => import("../views/About"),
   },
   {
-    path: "/blog",
-    name: "Blog",
-    component: () => import("../views/Blog"),
-  },
-  {
-    path: "/events",
-    name: "Events",
-    component: () => import("../views/Events"),
-  },
-  {
     path: "/shop",
     name: "Shop",
     component: () => import("../views/Shop"),

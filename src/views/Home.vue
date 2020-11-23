@@ -5,7 +5,7 @@
       <v-container
         fluid
         class="text-center"
-        style="color: whitesmoke; margin-top: 11rem"
+        style="color: whitesmoke; margin-top: 10rem"
       >
         <img
           src="https://imgur.com/tNvpxYp.png"
@@ -34,11 +34,11 @@
           <span style="color: #e67e22">The second</span> home of gamers!
         </h1>
       </v-container>
-      <v-container fluid class="text-center" style="margin-top: 2.8rem">
+      <v-container fluid class="text-center" style="margin-top: 2.4rem">
         <h1
           style="
             font-weight: 300;
-            font-size: 2.3rem;
+            font-size: 2.1rem;
             letter-spacing: 2px;
             font-family: Bebas Neue, sans-serif;
             color: whitesmoke;
@@ -47,32 +47,44 @@
         >
           <u>Find Us On</u>
         </h1>
-        <v-btn fab text href="https://twitter.com/VortekAcademy" target="_blank"
+        <v-btn
+          fab
+          small
+          text
+          href="https://twitter.com/VortekAcademy"
+          target="_blank"
           ><v-icon>mdi-twitter</v-icon></v-btn
         >
         <v-btn
           fab
+          small
           text
           href="https://instagram.com/vortek.academy"
           target="_blank"
           ><v-icon>mdi-instagram</v-icon></v-btn
         >
         <v-btn
-          height="4rem"
+          height="2.9rem"
           depressed
           href="https://discord.vortekacademy.com"
           target="_blank"
-          style="border-radius: 12px"
+          style="border-radius: 10px"
           ><v-icon style="margin-right: 4px">mdi-discord</v-icon>Discord</v-btn
         >
         <v-btn
           fab
+          small
           text
           href="https://steamcommunity.com/id/vortekacademy"
           target="_blank"
           ><v-icon>mdi-steam</v-icon></v-btn
         >
-        <v-btn fab text href="https://twitch.tv/vortekacademy" target="_blank"
+        <v-btn
+          fab
+          small
+          text
+          href="https://twitch.tv/vortekacademy"
+          target="_blank"
           ><v-icon>mdi-twitch</v-icon></v-btn
         >
       </v-container>
