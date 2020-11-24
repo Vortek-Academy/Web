@@ -62,7 +62,13 @@ export default {
     users: [],
   }),
   beforeMount() {
-    fetch('http://localhost:3002/api/member/492182284812812304')
+    fetch(
+      `${
+        process.env.VUE_APP_TYPE === 'dev'
+          ? 'http://localhost:3002'
+          : 'https://vortekacademy.com'
+      }/api/member/492182284812812304`
+    )
       .then((res) => res.json())
       .then((res) => {
         this.users = res;

@@ -25,7 +25,7 @@
       <v-btn text depressed to="/contact">Contact</v-btn>
       <v-btn text depressed to="/legal">Legal</v-btn>
       <v-spacer />
-      <v-btn depressed to="https://paypal.me/vortekacademy" class="special"
+      <v-btn depressed href="https://paypal.me/vortekacademy" class="special"
         >Donate</v-btn
       >
     </v-app-bar>
@@ -34,7 +34,7 @@
 
 <script>
 export default {
-  name: "Navigator",
+  name: 'Navigator',
 };
 </script>
 
