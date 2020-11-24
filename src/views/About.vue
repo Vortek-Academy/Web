@@ -5,7 +5,7 @@
         <v-img src="https://imgur.com/dsRurek.png"></v-img>
         <h1
           style="
-            margin-top: 15px;
+            margin-top: 17px;
             font-weight: 300;
             letter-spacing: 2px;
             font-family: Bebas Neue, sans-serif;
@@ -13,7 +13,7 @@
         >
           About <span style="color: #e67e22">VA</span>
         </h1>
-        <v-card-text style="font-size: 14px">
+        <v-card-text style="font-size: 16px">
           VorteK Academy is an independent tournament organizer and gaming
           community working in partnership with other figureheads of the Asian
           Rocket League scene, aiming to spotlight the many talented players
@@ -22,28 +22,50 @@
         </v-card-text>
       </v-card>
     </v-layout>
+    <h1
+      class="text-center white--text"
+      style="
+        margin-top: 5rem;
+        font-weight: 300;
+        letter-spacing: 2px;
+        font-family: Bebas Neue, sans-serif;
+      "
+    >
+      Our <span style="color: #e67e22">Staff</span>
+    </h1>
+    <v-sheet
+      class="mx-auto"
+      max-width="70%"
+      style="margin: 3.5rem; background: transparent"
+    >
+      <v-slide-group dark show-arrows style="color: whitesmoke">
+        <v-slide-item v-for="user in users" :key="user.username">
+          <div style="margin: 8px" class="text-center">
+            <v-avatar size="95">
+              <v-img :src="user.avatar"></v-img>
+            </v-avatar>
+            <br />
+            {{ user.username }}
+            <br />
+            <span style="color: #e67e22; font-size: 14px">#{{ user.tag }}</span>
+          </div>
+        </v-slide-item>
+      </v-slide-group>
+    </v-sheet>
   </v-container>
 </template>
 
 <script>
 export default {
-  name: "About",
+  name: 'About',
   data: () => ({
     users: [],
   }),
-  mounted: () => {
-    fetch("https://discord.com/api/v8/guilds/492182284812812304", {
-      method: "GET",
-      headers: {
-        "Content-Type": "application/json",
-        Authorization:
-          "Bot NTc3MzUxNDg0OTg4MTk0ODE2.XNjyeA.Ay2MOt9LGRedCXLSA4QHn_JE0HM",
-        "Access-Control-Allow-Origin": "*",
-      },
-    })
+  beforeMount() {
+    fetch('http://localhost:3002/api/member/492182284812812304')
       .then((res) => res.json())
       .then((res) => {
-        console.log(res);
+        this.users = res;
       });
   },
 };
