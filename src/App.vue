@@ -2,7 +2,9 @@
   <v-app style="top: 0; left: 0">
     <div id="backdrop"></div>
     <div id="main">
-      <Navigator style="z-index: 1000; position: fixed; width: 100%" />
+      <Navigator
+        style="z-index: 500; position: fixed; width: 100%; margin-top: 1rem"
+      />
       <router-view />
     </div>
   </v-app>

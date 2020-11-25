@@ -115,11 +115,7 @@
         </v-card-title>
         <v-card-actions>
           <v-spacer></v-spacer>
-          <v-btn
-            depressed
-            color="#e67e22"
-            style="color: #23272a"
-            to="/"
+          <v-btn depressed color="#e67e22" style="color: #23272a" to="/"
             >Close</v-btn
           >
         </v-card-actions>

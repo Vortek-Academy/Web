@@ -1,8 +1,7 @@
 <template>
-  <v-container fluid style="margin-top: 8rem">
+  <v-container fluid style="margin-top: 10rem">
     <v-layout align-center justify-center>
       <v-card class="text-center white--text" dark max-width="60%">
-        <v-img src="https://imgur.com/dsRurek.png"></v-img>
         <h1
           style="
             margin-top: 17px;

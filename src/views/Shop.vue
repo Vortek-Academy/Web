@@ -58,42 +58,40 @@
 
 <script>
 export default {
-  name: "Shop",
+  name: 'Shop',
   data: () => ({
     tiers: [
       {
-        price: 0,
-        perks: ["Exclusive Donators role in our official Discord"],
+        price: 1,
+        perks: ['Exclusive Donators role in our official Discord'],
       },
       {
         price: 15,
         perks: [
-          "Premium Donators role",
-          "Access to Premium Donators voice channel",
-          "Plus all the $0+ perks",
+          'Premium Donators role',
+          'Access to Premium Donators voice channel',
+          'Plus all the $1+ perks',
         ],
       },
       {
         price: 30,
         perks: [
-          "A custom role that you can share with 2 other members",
-          "Plus all the $0+ and $15+ perks",
+          'A custom role that you can share with 2 other members',
+          'Plus all the $1+ and $15+ perks',
         ],
       },
     ],
   }),
   mounted() {
-    const script = document.createElement("script");
+    const script = document.createElement('script');
     script.setAttribute(
-      "src",
-      "https://checkout.razorpay.com/v1/payment-button.js"
+      'src',
+      'https://checkout.razorpay.com/v1/payment-button.js'
     );
-    script.setAttribute("data-payment_button_id", "pl_Fuzlsxrq2rmDwt");
-    script.setAttribute("data-button_text", "Donate VA");
+    script.setAttribute('data-payment_button_id', 'pl_Fuzlsxrq2rmDwt');
+    script.setAttribute('data-button_text', 'Donate VA');
 
-    document.getElementById("form").appendChild(script);
+    document.getElementById('form').appendChild(script);
   },
 };
 </script>
-
-<style scoped></style>
