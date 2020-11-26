@@ -184,10 +184,11 @@ export default {
           body: JSON.stringify(body),
         }
       ).then((res) => {
-        res.json().then((x) => console.log(x));
         if (res.status !== 200)
           this.response.text =
             'Something went wrong on our side. Please try again later!';
+        if (res.status === 429)
+          this.response.text = 'You can send only one query each day!';
         this.response.dialog = true;
         this.form.loading = false;
       });
@@ -195,5 +196,3 @@ export default {
   },
 };
 </script>
-
-<style scoped></style>
