@@ -1,10 +1,6 @@
 <template>
-  <v-container fluid style="top: 0; height: 100vh">
-    <v-container
-      fluid
-      class="text-center"
-      style="color: whitesmoke; margin-top: 11rem"
-    >
+  <v-container fluid style="margin-top: 11rem">
+    <v-container fluid class="text-center" style="color: whitesmoke">
       <h1
         style="
           font-weight: 300;

@@ -16,12 +16,15 @@
       <v-spacer />
       <v-btn text depressed to="/about">About</v-btn>
       <v-btn text depressed to="/shop">Shop</v-btn>
-      <v-btn text depressed to="/contact">Contact</v-btn>
-      <v-btn text depressed to="/legal">Legal</v-btn>
-      <v-spacer />
-      <v-btn depressed href="https://paypal.me/vortekacademy" class="special"
+      <v-btn
+        text
+        depressed
+        href="https://paypal.me/vortekacademy"
+        target="_blank"
         >Donate</v-btn
       >
+      <v-spacer />
+      <v-btn depressed href="" class="special">Login</v-btn>
     </v-app-bar>
   </v-layout>
 </template>

@@ -1,5 +1,5 @@
 <template>
-  <v-container fluid style="margin-top: 11rem; margin-bottom: 5rem">
+  <v-container fluid style="margin-top: 11rem">
     <v-layout justify-center align-center>
       <v-card class="text-center" dark width="70%">
         <h1

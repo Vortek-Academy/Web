@@ -6,16 +6,19 @@
         style="z-index: 500; position: fixed; width: 100%; margin-top: 1rem"
       />
       <router-view />
+      <v-divider style="background: #e67e22; margin-top: 7rem" />
+      <Footer style="z-index: 500; width: 100%; bottom: 0; left: 0" />
     </div>
   </v-app>
 </template>
 
 <script>
 import Navigator from '@/components/Navigator';
+import Footer from '@/components/Footer';
 
 export default {
   name: 'App',
-  components: { Navigator },
+  components: { Navigator, Footer },
   data: () => ({
     //
   }),
