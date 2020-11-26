@@ -1,6 +1,6 @@
 <template>
   <v-layout justify-center align-center>
-    <v-app-bar dark flat color="transparent" max-width="75%" hide-on-scroll>
+    <v-app-bar dark flat color="transparent" max-width="75%">
       <router-link to="/" class="text-decoration-none white--text">
         <v-toolbar-title
           style="

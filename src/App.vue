@@ -26,6 +26,10 @@ export default {
 </script>
 
 <style>
+html {
+  scroll-behavior: smooth !important;
+}
+
 #backdrop {
   top: 0;
   left: 0;
